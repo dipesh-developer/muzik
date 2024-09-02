@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+/*@author dipesh kumar*//*@author dipesh kumar*//*@author dipesh kumar*/
+.phone {
+    width: 300px;
+    height: 600px;
+    background-color: #000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+/*@author dipesh kumar*//*@author dipesh kumar*//*@author dipesh kumar*/
+.screen {
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-player {
+    text-align: center;
+    width: 100%;
+}
+
+.album-art {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: rotateAlbumArt 5s linear infinite;
+}
+
+.song-info {
+    margin-top: 20px;
+}
+
+.song-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.artist-name {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.controls {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playback-control {
+    font-size: 50px;
+    color: #f44336;
+    animation: pulsePlayButton 1s ease-in-out infinite;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 2.5px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #f44336;
+    animation: moveProgress 10s linear infinite;
+}
+
+@keyframes rotateAlbumArt {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulsePlayButton {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes moveProgress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+        .button-container {
+            position: absolute;
+            bottom: 33%;
+            width: 100%;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+
+
+        .button-cntainer {
+            position: absolute;
+            bottom: 40%;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }

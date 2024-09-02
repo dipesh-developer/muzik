@@ -1,0 +1,85 @@
+/* General Styles */
+form {
+  border: 0px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%; /* Ensures the input takes up the full width of its container */
+  padding: 12px 20px; /* Padding inside the input */
+  margin: 8px 0; /* Adjust the margin to fit better on smaller screens */
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 70%;
+}
+
+.container {
+width: 30%;
+  padding: 100px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Media query for devices with a screen width up to 1000px */
+@media only screen and (max-width: 1000px) {
+  form {
+    width: 90%;
+    margin: auto;
+    border: 2px solid #f1f1f1;
+  }
+
+  img.avatar {
+    width: 0px;
+  }
+
+  .container {
+    padding: 8px;
+  }
+}
+
+/* Media query for extra small screens (up to 300px) */
+@media only screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+
+  img.avatar {
+    width: 50%;
+  }
+}
